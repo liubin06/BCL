@@ -7,19 +7,19 @@ flags:
   - `--estimator`: specify comparative learning methods: SimCLR, DCL, BCL, HCL
 
 
-For instance, run the following command to train an embedding on CIFAR10.
+Please use the following command to replicate the BCL and comparative methods:
 ```
-python main.py --esitmator BCL
-```
-```
-python main.py --esitmator SimCLR
+python main.py --dataset_name cifar10 --batch_size 256 --estimator BCL
 ```
 ```
-python main.py --esitmator DCL
+python main.py --dataset_name cifar10 --batch_size 256 --estimator HCL
+```
+```
+python main.py --dataset_name cifar10 --batch_size 256 --estimator DCL
 ```
 
 ```
-python main.py --esitmator HCL
+python main.py --dataset_name cifar10 --batch_size 256 --estimator SimCLR
 ```
 
 ### Linear evaluation
