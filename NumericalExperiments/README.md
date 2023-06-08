@@ -15,7 +15,7 @@ To visualize the empirical distributions of positive and negative examples, run
 empirical_distribution.py
 ```
 
-To visualize the omega weights under different a and b settings, run 
+To visualize the weights $\omega$ under different $\alpha$ and $\beta$ settings, run 
 ```
 draw_omega(fixalpha).py or draw_omega(fixbeta).py
 ```
@@ -25,5 +25,9 @@ The code in this repository requires the following Python packages:
 numpy
 
 matplotlib
+
+seaborn
+
+scipy
 
 
