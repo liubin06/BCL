@@ -1,15 +1,19 @@
 ## Bayesian Self-supervised Contrastive Learning
 We consider self-supervised contrastive learning from unlabeled data. 
 How can we learn good representation that maximizely preserves the semantic structure of embeddings ?
+
 A unlabeled data of false negative (positive) should not be pushed apart from the anchor, leading to the 
 **true principle**.
+
 A unlabeled data of true negative (negative) should be pushed apart from the anchor, leading to the **hard principle**.
 Starting from the above intuition, we design BCL that still uses random samples from the unlabeled data, while correcting the resulting bias with importance weights.
 
 
 ## Flags:
 `--alpha`: corresponding to the macro-AUC of encoder, and specifies the **location parameter** for **dibiasing false negatives**.
+
 `--beta`: corresponding to the concentration degree of hard negative components and specifies the **hardness level** for **mining hard negatives**.
+
 `--estimator`: specifies the comparative learning methods: SimCLR, DCL, HCL, BCL.
 
 ## Usage
