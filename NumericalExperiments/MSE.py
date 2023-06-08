@@ -67,11 +67,11 @@ def generatesample(tau_plus,alpha,gamma,temperater,M_anchors,N_negatives):
         anchor_pos = []
         for unlabel in range(N_negatives):
             if np.random.uniform(0, 1) < tau_plus:
-                pos_score = AccRejetSamplingFN(alpha,a, b)  # 生成正例
+                pos_score = AccRejetSamplingFN(alpha,a, b)  # generate positive samples
                 anchor_scores.append(pos_score)
                 anchor_labels.append(False)
             else:
-                neg_score = AccRejetSamplingTN(alpha,a, b) # 生成负例
+                neg_score = AccRejetSamplingTN(alpha,a, b) # generate negative samples
                 anchor_scores.append(neg_score)
                 anchor_labels.append(True)
         for unlabel in range(10):
