@@ -20,7 +20,7 @@ Starting from the above intuition, we design BCL that still uses random samples 
 ## Usage
 For instance, run the following command to train an embedding on CIFAR10.
 ```
-python main.py --esitmator BCL
+python main.py --dataset_name stl10 --batch_size 256 --estimator BCL --alpha 0.80 --beta 1.0
 ```
 
 ## Linear evaluation
@@ -29,7 +29,7 @@ The model is evaluated by training a linear classifier after fixing the learned 
 path flags:
   - `--model_path`: specify the path to saved model
 ```
-python linear.py --model_path results/model.pth
+python linear.py --dataset_name stl10 --model_path ../results/stl10/stl10_BCL_model_256_0.8_1.0_400.pth
 ```
 
 ## Acknowledgements
