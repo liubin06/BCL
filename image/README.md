@@ -13,7 +13,7 @@
 - None: fixed $\alpha$.
 
 ## Usage
-For instance, run the following command to train an embedding on CIFAR10.
+For instance, run the following command to train an embedding on STL10 dataset.
 ```
 python main.py --dataset_name stl10 --batch_size 256 --estimator BCL --alpha 0.80 --beta 1.0
 ```
