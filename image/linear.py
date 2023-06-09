@@ -87,7 +87,7 @@ if __name__ == '__main__':
         param.requires_grad = False
     model = nn.DataParallel(model)
 
-    optimizer = optim.Adam(model.module.fc.parameters(), lr=1e-3, weight_decay=1e-6)
+    optimizer = optim.Adam(model.module.fc.parameters(), lr=1e-2, weight_decay=1e-6)
     loss_criterion = nn.CrossEntropyLoss()
     results = {'train_loss': [], 'train_acc@1': [], 'train_acc@5': [],
                'test_loss': [], 'test_acc@1': [], 'test_acc@5': []}
