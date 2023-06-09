@@ -6,6 +6,8 @@
 
 `--estimator`: specifies the comparative learning methods: SimCLR, DCL, HCL, BCL.
 
+`--alpha_setting`: configuring an adaptive alpha method if using BCL estimator.
+
 ## Usage
 For instance, run the following command to train an embedding on CIFAR10.
 ```
