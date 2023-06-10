@@ -6,7 +6,7 @@
 
 `--estimator`: specifies the comparative learning methods: SimCLR, DCL, HCL, BCL.
 
-`--alpha_setting`: configuring an adaptive $\alpha$ method [linear, empirical_estimation, None] if using BCL estimator. 
+`--alpha_setting`: configuring an adaptive method for setting $\alpha$ : linear, empirical_estimation, None.
 
 - linear: linearly increased $\alpha$.
 - empirical_estimation: empirically estimated $\alpha$.
