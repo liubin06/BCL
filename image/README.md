@@ -31,10 +31,10 @@ python linear.py --dataset_name stl10 --model_path ../results/stl10/stl10_BCL_mo
 |Method  |    $\alpha$     |    $\beta$    | Arch | Latent Dim | Batch Size  | Accuracy(%) | Download |
 |---|:---------------:|:-------------:|:----:|:---:|:---:|:-----------:|:---:|
 | SimCLR |        ／        |       ／       | ResNet50 | 128  | 256  |    80.15    |  [model](https://drive.google.com/file/d/1qQE03ztnQCK4dtG-GPwCvF66nq_Mk_mo/view?usp=sharing)|
-| BCL | 0.70 | 1.0 | ResNet50 | 128  | 256  |    87.51    |  [model](https://drive.google.com/file/d/18Z4L6F_yT21-GakycPpcq2Jue7KdUssx/view?usp=drive_link)|
-| BCL | 0.75  |1.0 | ResNet50 | 128  | 256  |    86.31    |  [model](https://drive.google.com/file/d/1W7-m9QQMfyFDLEV0BsNs0357tZMW9Tlu/view?usp=drive_link)|
-| BCL | 0.80  |1.0 | ResNet50 | 128  | 256  |    87.35    |  [model](https://drive.google.com/file/d/1vhPi4xt2_TaI_fZyO0pJtz9JYE8g7zLt/view?usp=drive_link)|
-| BCL | 0.85  |1.0 | ResNet50 | 128  | 256  |    87.12    |  [model](https://drive.google.com/file/d/1q28dQe60dUMB4Xp9WP60kY1qfzsRXFIx/view?usp=drive_link)|
+| BCL | $\alpha$=0.70 |$\beta$=1.0 | ResNet50 | 128  | 256  |    87.51    |  [model](https://drive.google.com/file/d/18Z4L6F_yT21-GakycPpcq2Jue7KdUssx/view?usp=drive_link)|
+| BCL | $\alpha$=0.75  |$\beta$=1.0 | ResNet50 | 128  | 256  |    86.31    |  [model](https://drive.google.com/file/d/1W7-m9QQMfyFDLEV0BsNs0357tZMW9Tlu/view?usp=drive_link)|
+| BCL | $\alpha$=0.80  |$\beta$=1.0 | ResNet50 | 128  | 256  |    87.35    |  [model](https://drive.google.com/file/d/1vhPi4xt2_TaI_fZyO0pJtz9JYE8g7zLt/view?usp=drive_link)|
+| BCL | $\alpha$=0.85  |$\beta$=1.0 | ResNet50 | 128  | 256  |    87.12    |  [model](https://drive.google.com/file/d/1q28dQe60dUMB4Xp9WP60kY1qfzsRXFIx/view?usp=drive_link)|
 
 ## Acknowledgements
 
