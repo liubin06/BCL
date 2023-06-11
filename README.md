@@ -9,11 +9,13 @@ A unlabeled data of true negative (negative) should be pushed apart from the anc
 
 ![illustrative](https://github.com/liubin06/BCL/blob/main/pic/illustrative.jpeg)
 
-## The problem formulation for BCL
-For an given anchor, let $\hat x$ be a random variable representing the similarity score between  the given anchor point and unlabeled samples, assuming $\hat x$ independently and identically distributed with an unknown distribution $\phi$(Fig. a).
+## The problem formulation of BCL
+![formulation](https://github.com/liubin06/BCL/blob/main/pic/formulation.jpg)
 
-For an unlabeled sample, the prior probability of it being a positive example is $\tau^+$, and the prior probability of it being a negative example is $1-\tau^+$ (Fig. b).
+-(a) For an given anchor, let $\hat x$ be a random variable representing the similarity score between  the given anchor point and unlabeled samples, assuming $\hat x$ independently and identically distributed with an unknown distribution.
 
-For any encoder with given parameters, the probability that the similarity score of a positive example is higher than that of a negative example is $\alpha$ (Fig. c).
+-(b) For an unlabeled sample, the prior probability of it being a positive example is $\tau^+$, and the prior probability of it being a negative example is $1-\tau^+$ (Fig. b).
+
+-(c) For any encoder with given parameters, the probability that the similarity score of a positive example is higher than that of a negative example is $\alpha$ (Fig. c).
 
 Starting from the above intuition, we design BCL that still uses random samples from the **unlabeled data**, while correcting the resulting bias with importance weights.
