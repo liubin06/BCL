@@ -16,6 +16,6 @@ A unlabeled data of true negative (negative) should be pushed apart from the anc
 
 - **(b)** For an unlabeled sample, the prior probability of it being a positive example is $\tau^+$, and the prior probability of it being a negative example is $1-\tau^+$.
 
-- **(c)** For any encoder with given parameters, the probability that the similarity score of a positive example is higher than that of a negative example is $\alpha$.
+- **(c)** For encoder with given parameters, let $\alpha$ being the probability that the similarity score of a positive example is higher than that of a negative example.
 
-BCL utilizes random samples from the unlabeled data while correcting the resulting bias with importance weights, adhering to the aforementioned **true principle** and **hard principle**. Under the problem setting described above, BCL provides an asymptotical unbiased estimation of the supervised loss, and posterior probability estimation of samples being true negatives.
+BCL uses random samples from the unlabeled data while correcting the resulting bias with importance weights, adhering to the aforementioned **true principle** and **hard principle**. Under the problem setting described above, BCL provides an asymptotical unbiased estimation of the supervised loss, and posterior probability estimation of samples being true negatives.
