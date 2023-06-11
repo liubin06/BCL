@@ -30,12 +30,12 @@ draw_omega(fixalpha).py or draw_omega(fixbeta).py
 # Requirements
 The code in this repository requires the following Python packages:
 
-numpy
+- numpy
 
-matplotlib
+- matplotlib
 
-seaborn
+- seaborn
 
-scipy
+- scipy
 
 
