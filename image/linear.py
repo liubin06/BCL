@@ -94,5 +94,5 @@ if __name__ == '__main__':
 
     for epoch in range(1, epochs + 1):
         train_loss, train_acc_1, train_acc_5 = train_val(model, train_loader, optimizer)
-        if epoch % 5 == 0:
+        if epoch % 1 == 0:
             test_loss, test_acc_1, test_acc_5 = train_val(model, test_loader, None)
