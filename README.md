@@ -9,7 +9,7 @@ A unlabeled data of true negative (negative) should be pushed apart from the anc
 
 ![illustrative](https://github.com/liubin06/BCL/blob/main/pic/illustrative.jpeg)
 
-## The problem formulation of BCL
+## Problem formulation of BCL
 ![formulation](https://github.com/liubin06/BCL/blob/main/pic/formulation.jpg)
 
 - **(a)** For an given anchor, let $\hat x$ be a random variable representing the similarity score between  the given anchor point and unlabeled samples, assuming $\hat x$ independently and identically distributed with an unknown distribution.
