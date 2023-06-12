@@ -2,10 +2,10 @@
 We consider self-supervised contrastive learning from unlabeled data. 
 How can we learn good representation that maximizely preserves the semantic structure of embeddings ?
 
-A unlabeled data of false negative (positive sample, e.g., $x_3^-$) should not be pushed apart from the anchor, leading to the 
+False negative data point (e.g., $x_3^-$, which is a positive sample) should not be pushed apart from the anchor, leading to the 
 **true principle**.
 
-A unlabeled data of true negative (negative sample, e.g., $x_1^-$) should be pushed apart from the anchor, leading to the **hard principle**.
+True negative data point (e.g., $x_1^-$, which is a negative sample) should be pushed apart from the anchor, leading to the **hard principle**.
 
 ![illustrative](https://github.com/liubin06/BCL/blob/main/pic/illustrative.jpeg)
 
