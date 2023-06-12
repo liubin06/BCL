@@ -18,4 +18,4 @@ A unlabeled data of true negative (negative) should be pushed apart from the anc
 
 - **(c)** Given an encoder, let $\alpha$ be the probability that the similarity score of a positive sample is higher than that of a negative sample.
 
-BCL uses random samples from the unlabeled data while correcting the resulting bias with importance weights, adhering to the aforementioned **true principle** and **hard principle**. Under the problem setting described above, BCL provides an asymptotical unbiased estimation of the supervised loss, and posterior probability estimation of samples being true negatives.
+BCL uses random samples from the unlabeled data while correcting the resulting bias with importance weights, adhering to the aforementioned **true principle** and **hard principle**. Under the problem settings described above, BCL provides an asymptotical unbiased estimation of the **supervised loss**, and posterior probability estimation of samples being **true negatives**.
