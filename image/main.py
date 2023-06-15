@@ -128,11 +128,12 @@ def auc(net, memory_data_loader):
         elif 'stl' in dataset_name:
             feature_labels = torch.tensor(memory_data_loader.dataset.labels, device=feature_bank.device)
 
-            # sample one bach data for estimating alpha
-        sample = random.sample(range(len(memory_data_loader)), 1)[0]
+        # sample two mini-batches data for estimating alpha
+        sample = random.sample(range(len(memory_data_loader)), 2)
         counter = 0
+        auc = []
         for data, _, target in memory_data_loader:
-            if counter == sample:
+            if counter in sample:
                 data, target = data.to(device, non_blocking=True), target.to(device, non_blocking=True)
                 # feature [test_batch=256, D]
                 feature, out = net(data)
@@ -143,9 +144,9 @@ def auc(net, memory_data_loader):
                 # label[test_batch=256, N=50000]
                 bool_labels = target.unsqueeze(-1) == feature_labels
                 print('calculating AUC')
-                auc = roc_auc_score(bool_labels.T.cpu(), sim_matrix.T.cpu(), average='macro')
+                auc.append(roc_auc_score(bool_labels.T.cpu(), sim_matrix.T.cpu(), average='macro'))
             counter += 1
-    return auc
+    return sum(auc)/2
 
 
 if __name__ == '__main__':
