@@ -175,7 +175,7 @@ if __name__ == '__main__':
     print("Adaptive alpha method: %s" % alpha_setting)
 
     # configuring an linear alpha if using adaptive method
-    alphas = iter(np.linspace(0.501, args.alpha, 10))
+    alphas = iter(np.linspace(0.501, args.alpha, 20))
 
     # data prepare
     train_data, memory_data, test_data = utils.get_dataset(dataset_name, root=args.root)
@@ -197,7 +197,7 @@ if __name__ == '__main__':
         os.makedirs('../results/{}'.format(dataset_name))
 
     for epoch in range(1, epochs + 1):
-        if (epoch-1) % 40 == 0:
+        if (epoch-1) % 20 == 0:
             if alpha_setting == "linear":
                 alpha = next(alphas)
             elif alpha_setting == "empirical_estimation":
