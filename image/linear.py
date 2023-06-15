@@ -87,7 +87,12 @@ if __name__ == '__main__':
         param.requires_grad = False
     model = nn.DataParallel(model)
 
-    optimizer = optim.Adam(model.module.fc.parameters(), lr=1e-2, weight_decay=1e-6)
+    if dataset_name == 'stl10':
+        learning_rate = 1e-2
+    else:
+        learning_rate = 1e-3
+
+    optimizer = optim.Adam(model.module.fc.parameters(), lr=learning_rate, weight_decay=1e-6)
     loss_criterion = nn.CrossEntropyLoss()
     results = {'train_loss': [], 'train_acc@1': [], 'train_acc@5': [],
                'test_loss': [], 'test_acc@1': [], 'test_acc@5': []}
