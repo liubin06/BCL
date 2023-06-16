@@ -45,5 +45,13 @@ python linear.py --dataset_name stl10 --model_path ../results/stl10/stl10_BCL_mo
 | BCL | $\alpha$=0.90 |$\beta$=0.90 | ResNet50 | 128  | 256  |    92.12    |  [model](https://drive.google.com/file/d/1iItPK1Bw8BTeVwHrFgO2x_60fLoCxbXA/view?usp=drive_link)| 
 | BCL | empirical_estimation  |$\beta$=0.90 | ResNet50 | 128  | 256  |    92.52    |  [model](https://drive.google.com/file/d/1d64DO5A0aYv7Zjxez_Y0RB2tDD35aIw2/view?usp=drive_link)|
 
+## Pretrained Models on CIFAR100 Dataset
+|Method  |    $\alpha$     |    $\beta$    | Arch | Latent Dim | Batch Size  | Accuracy(%) | Download | 
+|---|:---------------:|:-------------:|:----:|:---:|:---:|:-----------:|:---:|
+| SimCLR |        ／        |       ／       | ResNet50 | 128  | 256  |    66.55    |  [model]()| 
+| BCL | $\alpha$=0.60 |$\beta$=1.0 | ResNet50 | 128  | 256  |   69.03|  [model](https://drive.google.com/file/d/1neDjZkTw57b2FEk-vwmjJazSq_pZz3Bv/view?usp=drive_link)| 
+| BCL | $\alpha$=0.70  |$\beta$=1.0 | ResNet50 | 128  | 256  |  69.70|  [model](https://drive.google.com/file/d/1R5e-h7NiHWiARGyOJVKwzy_cZVaNdTT0/view?usp=drive_link)| 
+| BCL | $\alpha$=0.80  |$\beta$=1.0 | ResNet50 | 128  | 256  |  68.63|  [model](https://drive.google.com/file/d/1UFD2OYfuXVuayHns6W0dwtU1psmZxlLm/view?usp=drive_link)| 
+| BCL | $\alpha$=0.90  |$\beta$=1.0 | ResNet50 | 128  | 256  |  67.47|  [model](https://drive.google.com/file/d/1x_2PpauCcPIBqy1YpepbqIAGf0cssG9g/view?usp=drive_link)|
 ## Acknowledgements
 Part of this code is credited to [leftthomas/SimCLR](https://github.com/leftthomas/SimCLR), [chingyaoc/DCL](https://github.com/chingyaoc/DCL) and [Joshua/HCL](https://github.com/joshr17/HCL).
