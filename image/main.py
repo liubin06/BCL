@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
     # model setup and optimizer config
     model = Model(feature_dim).to(device)
-    model = nn.DataParallel(model)
+    #model = nn.DataParallel(model)
 
     optimizer = optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-6)
     c = len(memory_data.classes)
